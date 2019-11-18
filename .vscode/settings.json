@@ -10,6 +10,7 @@
     "[cpp]": {},
     "git.suggestSmartCommit": false,
     "files.associations": {
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iosfwd": "cpp"
     }
 }
