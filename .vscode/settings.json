@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "editor.mouseWheelZoom": true,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "C_Cpp.default.cppStandard": "c++20",
+    "compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
+    "git.path": "C:\\Program Files\\Git\\bin\\git.exe",
+    "[cpp]": {},
+    "git.suggestSmartCommit": false,
+    "files.associations": {
+        "ostream": "cpp"
+    }
+}
