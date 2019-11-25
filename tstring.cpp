@@ -93,7 +93,7 @@ char* TString::insert(size_t pos, const char* c) {
         for (size_t i=pos; i<oldlen; ++i) {
             tmp[i+strlen(c)] = ptr[i];
         }
-        tmp[oldlen+strlen(c)] = '\0';
+        tmp[len] = '\0';
         delete [] ptr;
         ptr = tmp;
         return ptr+pos;

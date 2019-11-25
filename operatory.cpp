@@ -1,6 +1,7 @@
 #include "operatory.h"
 #include "tstring.h"
 using namespace std;
+
 ostream& operator<<(ostream& strumien, const TString& s) {
     return strumien << (s.ptr ? s.ptr : "pusty");
 }
@@ -17,4 +18,14 @@ istream& operator>>(istream& strumien, TString& s) {
         s.ptr = nullptr;
     }
     return strumien;
+}
+
+TString operator+(const TString& a, const TString& b) {
+    TString tmp{a}; // TString tmp(a) albo TString tmp = a; albo auto tmp = a;
+    tmp.insert(tmp.size(),b);
+    return tmp; // tymczasowy obiekt musi byc zwrocony przez wartosc
+}
+
+TString& operator+=(TString& a, const TString& b) {
+    return a = a + b;
 }
