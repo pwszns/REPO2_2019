@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <algorithm>
 #include "tstring.h"
 #include "operatory.h"
 using namespace std;
@@ -27,5 +29,8 @@ int main() {
     cout << s2 << endl;
     s3 += s3 + s3;
     cout << s3 << endl;
+    string ss("abrakadabra");
+    s1 = for_each(ss.begin(),ss.end(),s1);
+    cout << s1 << endl;
     cout << "----------------" << endl;
 }

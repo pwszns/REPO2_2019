@@ -28,6 +28,11 @@ class TString {
         // operatory konwersji na wskazany typ:
         operator char*() { return ptr; }
         operator const char*() const { return ptr; }
+        // operator funkcyjny
+        void operator()(const char& c) {
+            push_back(c);
+        } // teraz mamy obikt funkcyjny, np. wywolanie s1('A');
+          // oznacza s1.operator()('A');
 
         char* insert(size_t pos, const char* c);
         char* insert(size_t pos, char c);
